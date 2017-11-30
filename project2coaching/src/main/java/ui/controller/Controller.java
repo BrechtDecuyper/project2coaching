@@ -14,8 +14,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import domain.service.Service;
-import ui.controller.handler.HandlerFactory;
-import ui.controller.handler.RequestHandler;
 
 @WebServlet("/Controller")
 @MultipartConfig

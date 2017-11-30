@@ -8,11 +8,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import ui.controller.RequestHandler;
 
-public class IndexHandler extends RequestHandler {
+public class MailHandler extends RequestHandler {
 
 	@Override
 	public void handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.getRequestDispatcher("index.jsp").forward(request, response);
+		request.getRequestDispatcher("mail.jsp").forward(request, response);
 	}
+
 }

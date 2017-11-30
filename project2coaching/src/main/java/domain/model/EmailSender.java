@@ -12,11 +12,14 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+// https://www.arclab.com/en/kb/email/how-to-enable-imap-pop3-smtp-gmail-account.html
+
 public class EmailSender {
 
 	private String username = "project2coaches.UCLL", password = "p2t@ucll";
 	private String messageHeader = "<meta charset=\"ISO-8859-1\">";
 	private Properties properties;
+
 	private List<String> list;
 	private Random rand;
 

@@ -1,4 +1,4 @@
-package ui.controller.handler;
+package ui.controller;
 
 import java.util.HashMap;
 import java.util.Map;

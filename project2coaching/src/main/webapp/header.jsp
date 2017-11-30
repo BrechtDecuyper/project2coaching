@@ -20,6 +20,7 @@
 			<nav class="navbar navbar-default" role="navigation">
 	            <ul class="nav navbar-nav">
 	            	<li id="${param.home}"><a href="Controller?action=home">Home</a></li>
+	            	<li id="${param.mail}"><a href="Controller?action=gotoMail">Mail</a></li>
 	            </ul>
 			</nav>
 		</header>
