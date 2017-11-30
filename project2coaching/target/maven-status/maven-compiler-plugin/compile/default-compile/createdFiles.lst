@@ -1,0 +1,5 @@
+domain\service\Service.class
+ui\controller\handler\RequestHandler.class
+ui\controller\handler\HandlerFactory.class
+ui\controller\handler\IndexHandler.class
+ui\controller\Controller.class
