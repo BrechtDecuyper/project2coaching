@@ -12,6 +12,7 @@
 		<javax.mail.version>1.4.7</javax.mail.version>
         <apachePOI.version>3.15</apachePOI.version>
         <apachePOIXml.version>3.15</apachePOIXml.version>
+        <lowagie.version>4.2.1</lowagie.version>
         <fileupload.version>1.3.1</fileupload.version>
 	</properties>
 
@@ -30,6 +31,7 @@
 	</build>
 
 	<dependencies>
+        <!-- Servlet dependencies -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
@@ -40,6 +42,8 @@
 			<artifactId>jstl</artifactId>
 			<version>${javax.servlet.version}</version>
 		</dependency>
+
+        <!-- Mail dependencies -->
 		<dependency>
 			<groupId>javax.mail</groupId>
 			<artifactId>mail</artifactId>
@@ -57,6 +61,11 @@
             <artifactId>poi-ooxml</artifactId>
             <version>${apachePOIXml.version}</version>
         </dependency>
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<version>${lowagie.version}</version>
+		</dependency>
 
         <!-- File Uploader dependency -->
         <dependency>
@@ -64,28 +73,5 @@
             <artifactId>commons-fileupload</artifactId>
             <version>${fileupload.version}</version>
         </dependency>
-
-<!--
- 		<dependency>
-		    <groupId>commons-collections</groupId>
-		    <artifactId>commons-collections</artifactId>
-		    <version>3.1</version>
-		</dependency>
-		<dependency>
-		    <groupId>commons-fileupload</groupId>
-		    <artifactId>commons-fileupload</artifactId>
-		    <version>1.2.2</version>
-		</dependency>
-		<dependency>
-		    <groupId>commons-io</groupId>
-		    <artifactId>commons-io</artifactId>
-		    <version>2.1</version>
-		</dependency>
-		<dependency>
-		    <groupId>commons-logging</groupId>
-		    <artifactId>commons-logging</artifactId>
-		    <version>1.0.4</version>
-		</dependency>
- -->
  	</dependencies>
 </project>

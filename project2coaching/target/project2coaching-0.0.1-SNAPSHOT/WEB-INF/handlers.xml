@@ -5,4 +5,6 @@
 	<entry key="home">ui.controller.handler.IndexHandler</entry>
 	<entry key="gotoMail">ui.controller.handler.MailHandler</entry>
 	<entry key="sendMail">ui.controller.handler.SendMailHandler</entry>
+	<entry key="xlsxDownload">ui.controller.handler.XlsxDownloadHandler</entry>
+	<entry key="xlsDownload">ui.controller.handler.XlsDownloadHandler</entry>
 </properties>
