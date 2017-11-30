@@ -14,14 +14,12 @@ public class SendMailHandler extends RequestHandler {
 	@Override
 	public void handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		String receiver = request.getParameter("receiver");
 		try {
 			this.getService().sendStandardMail(receiver);
 		} catch (MessagingException e) {
 			throw new ServletException(e.getMessage(), e);
 		}
-
+		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
-
 }

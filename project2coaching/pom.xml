@@ -7,6 +7,12 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<javax.version>7.0</javax.version>
+		<javax.servlet.version>1.2</javax.servlet.version>
+		<javax.mail.version>1.4.7</javax.mail.version>
+        <apachePOI.version>3.15</apachePOI.version>
+        <apachePOIXml.version>3.15</apachePOIXml.version>
+        <fileupload.version>1.3.1</fileupload.version>
 	</properties>
 
 	<build>
@@ -25,20 +31,40 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
-		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
-			<version>7.0</version>
+			<version>${javax.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${javax.servlet.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.mail</groupId>
 			<artifactId>mail</artifactId>
-			<version>1.4.7</version>
+			<version>${javax.mail.version}</version>
 		</dependency>
+
+        <!-- File Reader dependencies -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${apachePOI.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${apachePOIXml.version}</version>
+        </dependency>
+
+        <!-- File Uploader dependency -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>${fileupload.version}</version>
+        </dependency>
+
 <!--
  		<dependency>
 		    <groupId>commons-collections</groupId>

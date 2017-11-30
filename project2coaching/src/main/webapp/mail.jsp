@@ -6,9 +6,8 @@
 <main>
 <div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
-		<h1>Have a nice day</h1>
+		<h1>We send YOU a mail!</h1>
 		<form method="POST" action="Controller?action=sendMail">
-			<legend>We send YOU a mail!</legend>
 			<div class="form-group">
 				<label for="receiver">Email: </label>
 				<input type="text" class="form-control" id="receiver" name="receiver">

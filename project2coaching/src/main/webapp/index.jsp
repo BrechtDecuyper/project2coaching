@@ -1,5 +1,6 @@
 <jsp:include page="header.jsp">
 	<jsp:param value="Home" name="title" />
+	<jsp:param value="current" name="home"/>
 </jsp:include>
 
 <main>
