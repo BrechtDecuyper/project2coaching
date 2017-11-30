@@ -21,6 +21,9 @@
 	            <ul class="nav navbar-nav">
 	            	<li id="${param.home}"><a href="Controller?action=home">Home</a></li>
 	            	<li id="${param.mail}"><a href="Controller?action=gotoMail">Mail</a></li>
+	            	<li><a href="Controller?action=xlsxDownload">.XLSX</a></li>
+	            	<li><a href="Controller?action=xlsDownload">.XLS</a></li>
+	            	<li><a href="Controller?action=pdfDownload">.PDF</a></li>
 	            </ul>
 			</nav>
 		</header>

@@ -23,6 +23,8 @@ import com.itextpdf.text.pdf.PdfWriter;
 
 import domain.model.ModelClass;
 
+// http://www.vogella.com/tutorials/JavaPDF/article.html
+
 public class PdfDownloader {
 
 	private static Font catFont = new Font(Font.FontFamily.TIMES_ROMAN, 18, Font.BOLD);
