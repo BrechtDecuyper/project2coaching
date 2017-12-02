@@ -4,8 +4,13 @@
 	<entry key="">ui.controller.handler.IndexHandler</entry>
 	<entry key="home">ui.controller.handler.IndexHandler</entry>
 	<entry key="gotoMail">ui.controller.handler.MailHandler</entry>
-	<entry key="sendMail">ui.controller.handler.SendMailHandler</entry>
+	<entry key="mailSend">ui.controller.handler.SendMailHandler</entry>
 	<entry key="xlsxDownload">ui.controller.handler.XlsxDownloadHandler</entry>
 	<entry key="xlsDownload">ui.controller.handler.XlsDownloadHandler</entry>
 	<entry key="pdfDownload">ui.controller.handler.PdfDownloadHandler</entry>
+	<entry key="gotoImageAdd">ui.controller.handler.ImageHandler</entry>
+	<entry key="imageGet">ui.controller.handler.ImageGetHandler</entry>
+	<entry key="imageOverview">ui.controller.handler.ImageOverviewHandler</entry>
+	<entry key="imageUpload">ui.controller.handler.ImageUploadHandler</entry>
+	<entry key="imageDownload">ui.controller.handler.ImageDownloadHandler</entry>
 </properties>
