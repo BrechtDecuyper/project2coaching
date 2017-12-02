@@ -159,7 +159,7 @@ public class PdfDownloader {
 	private static void createList(Section subCatPart) {
 		com.itextpdf.text.List list = new com.itextpdf.text.List(true, false, 10);
 		list.add(new ListItem("Als twee honden vechten om een been, is er een been te kort."));
-		list.add(new ListItem("Beter een vogel in de hand, dan geen in de hand."));
+		list.add(new ListItem("Beter een vogel in de hand, dan geen hand."));
 		list.add(new ListItem("Men kan met ideeen flirten, maar met de feiten moet men trouwen."));
 		subCatPart.add(list);
 	}
