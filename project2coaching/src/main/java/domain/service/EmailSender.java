@@ -15,6 +15,8 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 // https://www.arclab.com/en/kb/email/how-to-enable-imap-pop3-smtp-gmail-account.html
+// https://www.javatpoint.com/example-of-sending-email-using-java-mail-api
+// https://www.mkyong.com/java/javamail-api-sending-email-via-gmail-smtp-example/
 
 public class EmailSender {
 
