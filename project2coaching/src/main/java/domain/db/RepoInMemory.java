@@ -51,15 +51,15 @@ public class RepoInMemory {
 	}
 
 	private void initiateModels() {
-		this.addNewModel(new ModelClass("Simple Minds","Someone Somewhere (In Summertime) - Remix"));
-		this.addNewModel(new ModelClass("Bronski Beat","Why?"));
-		this.addNewModel(new ModelClass("The Police","Message In A Bottle (Edit)"));
-		this.addNewModel(new ModelClass("The Steve Miller Band","Abracadabra"));
-		this.addNewModel(new ModelClass("Eagles","Hotel California"));
-		this.addNewModel(new ModelClass("10CC","Dreadlock Holiday"));
-		this.addNewModel(new ModelClass("David Bowie/Pat Metheny Group","This is Not America"));
-		this.addNewModel(new ModelClass("R.E.M.","Losing My Religion"));
-		this.addNewModel(new ModelClass("John Lennon & Yoko Ono and The Plastic Ono Band","Happy X-Mas (War Is Over)"));
-		this.addNewModel(new ModelClass("Yes","Owner Of A Lonely Heart"));
+		this.addNewModel(new ModelClass("Simple Minds","Someone Somewhere (In Summertime) - Remix", "https://www.youtube.com/watch?v=RUedmyr2G0M"));
+		this.addNewModel(new ModelClass("Bronski Beat","Why?", "https://www.youtube.com/watch?v=PxJVbe-D2cA"));
+		this.addNewModel(new ModelClass("The Police","Message In A Bottle (Edit)", "https://www.youtube.com/watch?v=ObL3L6MRvN4"));
+		this.addNewModel(new ModelClass("The Steve Miller Band","Abracadabra", "https://www.youtube.com/watch?v=hindso2RviY"));
+		this.addNewModel(new ModelClass("Eagles","Hotel California", "https://www.youtube.com/watch?v=EqPtz5qN7HM"));
+		this.addNewModel(new ModelClass("10CC","Dreadlock Holiday", "https://www.youtube.com/watch?v=fUNTk5xsxk4"));
+		this.addNewModel(new ModelClass("David Bowie/Pat Metheny Group","This is Not America", "https://www.youtube.com/watch?v=-KDMDda5DNg"));
+		this.addNewModel(new ModelClass("R.E.M.","Losing My Religion", "https://www.youtube.com/watch?v=OKvCV8MFIaw"));
+		this.addNewModel(new ModelClass("John Lennon & Yoko Ono and The Plastic Ono Band","Happy X-Mas (War Is Over)", "https://www.youtube.com/watch?v=yN4Uu0OlmTg"));
+		this.addNewModel(new ModelClass("Yes","Owner Of A Lonely Heart", "https://www.youtube.com/watch?v=9O6e7cgkeqw"));
 	}
 }

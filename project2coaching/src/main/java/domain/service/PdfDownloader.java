@@ -124,7 +124,7 @@ public class PdfDownloader {
 	}
 
 	private static void createTable(Section subCatPart, List<ModelClass> models) throws BadElementException {
-		PdfPTable table = new PdfPTable(3);
+		PdfPTable table = new PdfPTable(4);
 
 		PdfPCell c1 = new PdfPCell(new Phrase("Date"));
 		c1.setHorizontalAlignment(Element.ALIGN_CENTER);
@@ -135,6 +135,10 @@ public class PdfDownloader {
 		table.addCell(c1);
 
 		c1 = new PdfPCell(new Phrase("Title"));
+		c1.setHorizontalAlignment(Element.ALIGN_CENTER);
+		table.addCell(c1);
+
+		c1 = new PdfPCell(new Phrase("Link"));
 		c1.setHorizontalAlignment(Element.ALIGN_CENTER);
 		table.addCell(c1);
 		table.setHeaderRows(1);
@@ -151,6 +155,10 @@ public class PdfDownloader {
 
 			c1 = new PdfPCell(new Phrase(model.getTitle()));
 			c1.setHorizontalAlignment(Element.ALIGN_LEFT);
+			table.addCell(c1);
+
+			c1 = new PdfPCell(new Phrase(model.getUrl()));
+			c1.setHorizontalAlignment(Element.ALIGN_CENTER);
 			table.addCell(c1);
 		}
 		subCatPart.add(table);

@@ -41,6 +41,7 @@ public class ExcelDownloader {
         header.createCell(0).setCellValue("DATE");
         header.createCell(1).setCellValue("Artist");
         header.createCell(2).setCellValue("Title");
+        header.createCell(3).setCellValue("Link");
 
         //create cellstyle for header
         CellStyle cs = workbook.createCellStyle();
@@ -58,6 +59,7 @@ public class ExcelDownloader {
         header.getCell(0).setCellStyle(cs);
         header.getCell(1).setCellStyle(cs);
         header.getCell(2).setCellStyle(cs);
+        header.getCell(3).setCellStyle(cs);
         
         SimpleDateFormat sdf = new SimpleDateFormat("dd/M/yy hh:mm:ss");
         //create data cells
@@ -67,6 +69,7 @@ public class ExcelDownloader {
             row.createCell(0).setCellValue(sdf.format(model.getDate()));
             row.createCell(1).setCellValue(model.getArtist());
             row.createCell(2).setCellValue(model.getTitle());
+            row.createCell(3).setCellValue(model.getUrl());
         }
 
         try {

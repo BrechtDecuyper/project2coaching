@@ -13,4 +13,5 @@
 	<entry key="imageOverview">ui.controller.handler.ImageOverviewHandler</entry>
 	<entry key="imageUpload">ui.controller.handler.ImageUploadHandler</entry>
 	<entry key="imageDownload">ui.controller.handler.ImageDownloadHandler</entry>
+	<entry key="dataOverview">ui.controller.handler.DataOverviewHandler</entry>
 </properties>

@@ -7,11 +7,13 @@ public class ModelClass {
 	private Date date;
 	private String artist;
 	private String title;
+	private String url;
 
-	public ModelClass(String artist, String title) {
+	public ModelClass(String artist, String title, String url) {
 		this.setDate();
 		this.setArtist(artist);
 		this.setTitle(title);
+		this.setUrl(url);
 	}
 		
 	public Date getDate() {
@@ -42,6 +44,14 @@ public class ModelClass {
 			throw new IllegalArgumentException("Wrong title given.");
 		}
 		this.title = title;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
 	}
 	
 	@Override

@@ -23,6 +23,7 @@
 			<nav class="navbar navbar-default" role="navigation">
 	            <ul class="nav navbar-nav">
 	            	<li id="${param.home}"><a href="Controller?action=home">Home</a></li>
+	            	<li id="${param.dataOverview}"><a href="Controller?action=dataOverview">Data Overview</a></li>
 	            	<li id="${param.mail}"><a href="Controller?action=gotoMail">Mail</a></li>
 	            	<li id="${param.imageOverview}"><a href="Controller?action=imageOverview">Image Overview</a></li>
 	            	<li id="${param.imageAdd}"><a href="Controller?action=gotoImageAdd">Add Image</a></li>
