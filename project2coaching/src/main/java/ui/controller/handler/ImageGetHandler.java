@@ -1,5 +1,7 @@
 package ui.controller.handler;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
@@ -15,11 +17,12 @@ public class ImageGetHandler extends RequestHandler {
 	public void handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String fileName = request.getParameter("fileName");
-		
-		String fileFormat = fileName.substring(fileName.indexOf(".")+1);
 
-		response.setContentType("image/"+fileFormat);
-		ImageIO.write(this.getService().getImage(fileName), fileFormat, response.getOutputStream());
+        File file = new File(this.getImageDirectory(), fileName);
+        BufferedImage image = ImageIO.read(file);
+        String extension = fileName.substring(fileName.lastIndexOf(".")+1);
+
+        response.setContentType("image/" + extension);
+        ImageIO.write(image, extension, response.getOutputStream());
 	}
-
 }

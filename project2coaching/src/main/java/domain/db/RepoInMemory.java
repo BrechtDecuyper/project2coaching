@@ -1,14 +1,7 @@
 package domain.db;
 
-import java.awt.image.BufferedImage;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
-import javax.imageio.ImageIO;
-import javax.servlet.http.Part;
 
 import domain.model.ModelClass;
 
@@ -16,11 +9,11 @@ public class RepoInMemory {
 
 	int count = 0;
 	List<ModelClass> models;
-	Map<String, BufferedImage> images;
+	List<String> images;
 	
 	public RepoInMemory() {
 		models = new ArrayList<>();
-		images = new HashMap<>();
+		images = new ArrayList<>();
 		this.initiateModels();
 	}
 	
@@ -32,22 +25,12 @@ public class RepoInMemory {
 		return this.models;
 	}
 	
-	public void addNewImage(Part file) {
-		try {
-			String fileName = "image" + (count++) + file.getSubmittedFileName().substring(file.getSubmittedFileName().lastIndexOf("."));
-			BufferedImage image = ImageIO.read(file.getInputStream());
-			this.images.put(fileName, image);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+	public void addNewImage(String fileName) {
+		this.images.add(fileName);
 	}
-	
-	public BufferedImage getImage(String fileName) {
-		return this.images.get(fileName);
-	}
-	
+		
 	public List<String> getImageNames() {
-		return new ArrayList<String>(this.images.keySet());
+		return this.images;
 	}
 
 	private void initiateModels() {

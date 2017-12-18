@@ -32,4 +32,8 @@ public abstract class RequestHandler {
 	protected Service getService() {
 		return service;
 	}
+	
+	protected String getImageDirectory() {
+		return "/UCLL/project2coaching/images/";
+	}
 }

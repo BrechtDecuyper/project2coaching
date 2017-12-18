@@ -1,11 +1,9 @@
 package domain.service;
 
-import java.awt.image.BufferedImage;
 import java.util.List;
 import java.util.Properties;
 
 import javax.mail.MessagingException;
-import javax.servlet.http.Part;
 
 import domain.db.RepoInMemory;
 import domain.model.ModelClass;
@@ -37,13 +35,10 @@ public class Service {
 		return this.getRepository().getModels();
 	}
 	
-	public void addNewImage(Part file) {
-		this.getRepository().addNewImage(file);
+	public void addNewImage(String string) {
+		this.getRepository().addNewImage(string);
 	}
 
-	public BufferedImage getImage(String fileName) {
-		return this.getRepository().getImage(fileName);
-	}
 	
 	public List<String> getImageNames() {
 		return this.getRepository().getImageNames();
