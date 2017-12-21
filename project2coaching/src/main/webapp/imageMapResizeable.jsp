@@ -71,34 +71,6 @@
 		data.fillOpacity = '1';
 		$('.dark').data('maphilight', data).trigger('alwaysOn.maphilight');
 	});
-
-	var ImageMap = function(map, img, width) {
-		var n, areas = map.getElementsByTagName('area'), len = areas.length, coords = [], previousWidth = width;
-		for (n = 0; n < len; n++) {
-			coords[n] = areas[n].coords.split(',');
-		}
-		this.resize = function() {
-			var n, m, clen, x = img.offsetWidth / previousWidth;
-			for (n = 0; n < len; n++) {
-				clen = coords[n].length;
-				for (m = 0; m < clen; m++) {
-					coords[n][m] *= x;
-				}
-				areas[n].coords = coords[n].join(',');
-			}
-			previousWidth = img.offsetWidth;
-			return true;
-		};
-
-	}, imageMap = new ImageMap(document.getElementById('wolfMap'), document
-			.getElementById('wolfImage'), 519);
-	imageMap.resize();
-
-	window.onresize = function() {
-		setTimeout(function() {
-			imageMap.resize();
-		}, 500);
-	}
 </script>
 
 
