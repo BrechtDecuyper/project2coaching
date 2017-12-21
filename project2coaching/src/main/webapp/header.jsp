@@ -30,6 +30,8 @@
 	            	<li><a href="Controller?action=xlsxDownload">.XLSX</a></li>
 	            	<li><a href="Controller?action=xlsDownload">.XLS</a></li>
 	            	<li><a href="Controller?action=pdfDownload">.PDF</a></li>
+	            	<li><a href="Controller?action=imageMap">Image Map</a></li>
+	            	<li><a href="Controller?action=imageMapResizeable">Image Map Resizeable</a></li>
 	            </ul>
 			</nav>
 		</header>
