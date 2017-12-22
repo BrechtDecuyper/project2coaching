@@ -13,6 +13,6 @@ public class IndexHandler extends RequestHandler {
 	@Override
 	public void handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.getRequestDispatcher("index.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/jsp/index.jsp").forward(request, response);
 	}
 }

@@ -13,7 +13,7 @@ public class MailHandler extends RequestHandler {
 	@Override
 	public void handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.getRequestDispatcher("mail.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/jsp/mail.jsp").forward(request, response);
 	}
 
 }

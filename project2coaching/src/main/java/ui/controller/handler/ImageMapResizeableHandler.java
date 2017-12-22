@@ -13,6 +13,6 @@ public class ImageMapResizeableHandler extends RequestHandler {
 	@Override
 	public void handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.getRequestDispatcher("imageMapResizeable.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/jsp/imageMapResizeable.jsp").forward(request, response);
 	}
 }

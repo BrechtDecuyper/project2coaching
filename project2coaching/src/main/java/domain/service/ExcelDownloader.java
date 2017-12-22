@@ -76,7 +76,7 @@ public class ExcelDownloader {
 			workbook.write(outputStream);
 			workbook.close();
 		} catch (IOException e) {
-			throw new IllegalArgumentException();
+			throw new IllegalArgumentException(e.getMessage(), e);
 		}
 	}
 }

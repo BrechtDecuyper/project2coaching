@@ -16,6 +16,10 @@
 		<exception-type>java.lang.Throwable</exception-type>
 	 	<location>/error.jsp</location>
 	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+	 	<location>/error.jsp</location>
+	</error-page>
 	<context-param>
 		<param-name>ssl</param-name>
 		<param-value>true</param-value>

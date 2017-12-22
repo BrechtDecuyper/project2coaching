@@ -13,6 +13,6 @@ public class ImageHandler extends RequestHandler {
 	@Override
 	public void handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.getRequestDispatcher("addImage.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/jsp/addImage.jsp").forward(request, response);
 	}
 }

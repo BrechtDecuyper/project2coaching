@@ -13,6 +13,6 @@ public class ImageMapHandler extends RequestHandler {
 	@Override
 	public void handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.getRequestDispatcher("imageMap.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/jsp/imageMap.jsp").forward(request, response);
 	}
 }

@@ -14,6 +14,6 @@ public class ImageOverviewHandler extends RequestHandler {
 	public void handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setAttribute("images", this.getService().getImageNames());
-		request.getRequestDispatcher("imageOverview.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/jsp/imageOverview.jsp").forward(request, response);
 	}
 }

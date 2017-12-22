@@ -14,7 +14,7 @@ public class DataOverviewHandler extends RequestHandler {
 	public void handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setAttribute("data", this.getService().getModels());
-		request.getRequestDispatcher("dataOverview.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/jsp/dataOverview.jsp").forward(request, response);
 	}
 
 }
